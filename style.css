@@ -1,0 +1,128 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Monsterrat';
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #cfbfbf;
+    --main-color: #fb889f;
+    --text-color: #0b0b0b;
+    --2nd-color: #a65f84;
+    --other-color: #be79aa;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem;
+
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36/10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14%;
+    transition: all .50s ease;
+}
+
+
+.logo label{
+    width: 100%;
+    height: auto;
+    color: #fff6fc;
+}
+.navbar{
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+.navbar a{
+    color: rgb(8, 8, 8);
+    font-size: 15px;    
+    font-weight: 500;
+    margin: 10px 22px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: red;
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+}
+.h-icons i{
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all .50s ease;
+}
+.h-icons i:hover{
+ transform: translateY(-4px);
+ color: var(--main-color);
+}
+.menu-icon{
+    height: 100%;
+    width: 70px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 60%;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    
+
+}
+section{
+    padding: 60px 14% 70px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(f5);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-text h1{
+    font-family:  'Leckerli One', cursive;
+    font-size: var(--big-font);
+    color: white;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.home-text p{
+    color: var(--2nd-color);
+    font-size:var(var(--p-font));
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+.btn{
+    padding: 20px 35px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 14px;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.btn:hover{
+    background: var(--2nd-color);
+}
